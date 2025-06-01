@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Estacionamento</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Estacionamento</h1>
+
+    <section>
+      <h2>Vagas Disponíveis</h2>
+      <button onclick="verSlots()">Ver Slots</button>
+      <pre id="slots"></pre>
+    </section>
+
+    <section>
+      <h2>Veículos Ativos</h2>
+      <button onclick="listarAtivos()">Listar Ativos</button>
+      <pre id="ativos"></pre>
+    </section>
+
+    <section>
+      <h2>Registrar Entrada</h2>
+      <input id="entradaPlaca" placeholder="Placa">
+      <input id="entradaModelo" placeholder="Modelo">
+      <button onclick="registrarEntrada()">Registrar Entrada</button>
+      <pre id="entrada"></pre>
+    </section>
+
+    <section>
+      <h2>Verificar Veículo</h2>
+      <input id="checkPlaca" placeholder="Placa">
+      <button onclick="checkVeiculo()">Checar</button>
+      <pre id="check"></pre>
+    </section>
+
+    <section>
+      <h2>Registrar Saída</h2>
+      <input id="saidaPlaca" placeholder="Placa">
+      <button onclick="registrarSaida()">Registrar Saída</button>
+      <pre id="saida"></pre>
+    </section>
+
+    <section>
+      <h2>Cancelar Registro</h2>
+      <input id="cancelarPlaca" placeholder="Placa">
+      <button onclick="cancelarRegistro()">Cancelar Registro</button>
+      <pre id="cancelar"></pre>
+    </section>
+
+    <section>
+      <h2>Ver Tempo Estacionado</h2>
+      <input id="tempoPlaca" placeholder="Placa">
+      <button onclick="verTempo()">Ver Tempo</button>
+      <pre id="tempo"></pre>
+    </section>
+
+    <section>
+      <h2>Atualizar Placa</h2>
+      <input id="updatePlaca" placeholder="Placa Atual">
+      <input id="novaPlaca" placeholder="Nova Placa">
+      <button onclick="atualizarVeiculo()">Atualizar</button>
+      <pre id="update"></pre>
+    </section>
+
+    <section>
+      <h2>Gerar Relatório</h2>
+      <button onclick="gerarRelatorio()">Relatório</button>
+      <pre id="relatorio"></pre>
+    </section>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
