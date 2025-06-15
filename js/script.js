@@ -52,13 +52,6 @@ async function verTempo() {
   document.getElementById('tempo').textContent = JSON.stringify(data, null, 2);
 }
 
-async function atualizarVeiculo() {
-  const oldPlate = document.getElementById('updatePlaca').value;
-  const newPlate = document.getElementById('novaPlaca').value;
-  const data = await fetchData(`update/${oldPlate}`, 'PUT', { plate: newPlate });
-  document.getElementById('update').textContent = JSON.stringify(data, null, 2);
-}
-
 async function gerarRelatorio() {
   const data = await fetchData('report');
   document.getElementById('relatorio').textContent = JSON.stringify(data, null, 2);
